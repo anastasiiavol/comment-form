@@ -19,7 +19,7 @@
   color: white;
 }
 
-.page-title{
+.page-title {
   color: #1a202a;
   text-transform: uppercase;
 }
@@ -28,7 +28,7 @@
   color: #61dafb;
 }
 
-.Comments-List{
+.Comments-List {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,32 +43,54 @@
   padding: 5px;
 }
 
-.Comments-name{
+.Comments-name {
   font-weight: bold;
   color: #1a202a;
 }
 
-.Comments-text{
+.Comments-text {
   color: #282c34;
 }
 
-.download-comments-btn{
+button{
   padding: 15px;
   border-radius: 10px;
   border: none;
   font: inherit;
+  cursor: pointer;
+}
+.download-comments-btn {
   background-color: #1a202a;
   color: white;
   transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-  cursor: pointer;
   margin-bottom: 30px;
 }
+
+.form-bnt-submit{
+  background-color: #3f6e31;
+  color: white;
+}
+
+.form-bnt-submit:hover {
+  background-color: #2e621d;
+}
+
 .download-comments-btn:hover {
   background-color: #282c34;
- }
+}
 
 .download-comments-btn:disabled {
   visibility: hidden;
+}
+
+.form-input {
+  padding: 10px;
+  margin: 10px;
+}
+
+.form-input-text {
+  width: 50%;
+  min-height: 70px;
 }
 
 @keyframes App-logo-spin {
