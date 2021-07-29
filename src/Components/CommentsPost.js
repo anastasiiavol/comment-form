@@ -40,6 +40,7 @@ class PostCommentForm extends Component {
                    name="name"
                    value={name}
                    onChange={this.changeHandler}
+                   required={true}
                    placeholder="Your name:"
             />
           </div>
@@ -50,6 +51,7 @@ class PostCommentForm extends Component {
                    name="text"
                    value={text}
                    onChange={this.changeHandler}
+                   required={true}
                    placeholder="Type here your comment:"
             />
           </div>
