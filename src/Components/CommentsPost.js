@@ -24,23 +24,29 @@ class PostCommentForm extends Component {
       })
   }
 
+  changeHandler = e => {
+    this.setState({ [e.target.name]: e.target.value })
+  }
+
   render() {
-    const {name, text } = this.state
+    const { name, text } = this.state
     return (
       <div>
         <form onSubmit={this.submitHandler}>
           <div>
             <input
               type="text"
-              name="Name"
+              name="name"
               value={name}
+              onChange={this.changeHandler}
             />
           </div>
           <div>
             <input
               type="text"
-              name="Comment Text"
+              name="text"
               value={text}
+              onChange={this.changeHandler}
             />
           </div>
           <button type="submit">Submit</button>
